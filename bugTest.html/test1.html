@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>テスト</title>
+</head>
+<body>
+  <h1>テスト</h1>
+  <p>ここに不具合の内容が記入されます</p>
+  <p id="now">ボタンを押すとGIFが再生されます</p>
+<div>
+  <button onclick="showGIF(200)">200ms</button>
+  <button onclick="showGIF(100)">100ms</button>
+</div>
+  <img id="image" src="">
+  <p><a href="./index.html">前のページに戻る</a></p>
+  <script>
+    const now = document.getElementById("now");
+    function showGIF(number) {
+      const img = document.getElementById("image");
+      img.src = `./img/test1_${number}ms.gif`;
+      now.innerHTML = number + "msを表示中";
+    }
+  </script>
+</body>
+</html>
