@@ -6,7 +6,7 @@ class Mino{
 	//spinNumber
 	constructor(number,stage){
 		this.x=Math.floor(config.BLOCK_COLS/3);//操作ミノのx座標を登録
-		this.y=0;//操作ミノのy座標を登録
+		this.y=1;//操作ミノのy座標を登録
 		this.blockNumber=number;//操作ミノの種類を保持
 		this.status=getMino(this.blockNumber);//操作ミノの形状を保持
 		this.stage=stage;//自身がを持つステージ情報を持つ//もうちょっとよくできそう
