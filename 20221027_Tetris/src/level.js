@@ -19,14 +19,6 @@ class Level{
 		this.level.innerHTML=this.levelNumber
 	}
     setLevel(){
-		// URLを取得
-		const url = new URL(window.location.href);
-		// URLSearchParamsオブジェクトを取得
-		const params = url.searchParams;
-		// パラメータから「setLevel」を取得
-		const level= params.get("setLevel");
-        if(level===null){
+
             return 1;
-        }
-        return parseInt(level);
 	}
