@@ -22,3 +22,4 @@ class Level{
 
             return 1;
 	}
+}
