@@ -22,4 +22,7 @@ class Level{
 
             return 1;
 	}
+	getLevel(){
+		return this.levelNumber;
+	}
 }
