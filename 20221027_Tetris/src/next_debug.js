@@ -59,6 +59,7 @@ class Next{
 }
 
 function getUniqueArray(){
+	//return getDebugArray()
 	let marking=new Array(0,0,0,0,0,0,0);//			選択済みか否か
 	
 	let array=new Array(-1,-1,-1,-1,-1,-1,-1);//	ここに情報を格納して値を返す
