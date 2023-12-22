@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width,user-scalable=yes">
 		<link rel="stylesheet" type="text/css" media="screen,print" href="style.css">
 		<title>Tetrapot</title>
-
+		<script  src="src/getLevel.js"></script>
 	</head>
 	<body>
 		
@@ -14,22 +14,20 @@
 				<canvas id="canvas"></canvas>
 				<script src="src/config.js"></script>
 				<script src="src/minoconfig.js"></script>
-				<script src="src/level.js"></script>
-				<script src="src/score.js"></script>
-				<script src="src/timer.js"></script>
-				<script src="src/next.js"></script>
-				<script src="src/stage.js" ></script>
+				<script src="src/Level.js"></script>
+				<script src="src/Score.js"></script>
+				<script src="src/Timer.js"></script>
+				<script src="src/Next.js"></script>
+				<script src="src/Stage.js" ></script>
 				<script src="src/draw.js"></script>
-				<script src="src/mino.js"></script>
+				<script src="src/Mino.js"></script>
 				<script src="src/debug0908.js" defer></script>
 				<p style="text-align: left"><a onclick="window.location.reload(true);" class="reload">リスタート</a></p>
 				<p style="text-align: left"><a href="index.html">スタート画面へ</a></p>
 			</td>
-			
 			<td valign="top" width="40%">
 				<canvas id="nextCanvas" width="10%"></canvas>
 			</td>
-
 			<td valign="top" width="10%" >
 				<div class="my-box">
 					level:<span id="level"></span>
@@ -39,32 +37,37 @@
 				</div>
 			</td>
 		<td valign="top" width="30%">
-				<br><p><font size="6": color="#00FFFF"><b>通常ゲームプログラム</b></font></p><br>
+				<br><p><font size="6" color="#00FFFF"><b>Tetrapot</b></font></p><br>
 				<p><b>操作方法</b></p><br>
-				<table border="1"  cellspacing="0"  bordercolor="#000000">
-				<tr><th>操作</th><th>機能</th></tr>
-				<tr>
-					<td align="center"> ↓ </td>
-					<td align="center">下へ移動</td>
-				</tr>
-				<tr>
-					<td align="center"> ← </td>
-					<td align="center">左へ移動</td>
-				</tr>
-				<tr>
-					<td align="center"> → </td>
-					<td align="center">右へ移動</td>
-				</tr>
-				<tr>
-					<td align="center"> A </td>
-					<td align="center">左へ回転</td>
-				</tr>
-				<tr>
-					<td align="center"> D </td>
-					<td align="center">右へ回転</td>
-				</tr>
-
+				<table border="1" cellspacing="1" bordercolor="Red">
+					<tr><th colspan="2">操作</th><th>機能</th></tr>
+					<tr>
+						<td > ↓ </td>
+						<td> S </td>
+						<td align="right"> 下へ移動</td>
+					</tr>
+					<tr>
+						<td > ← </td>
+						<td> A </td>
+						<td > 左へ移動</td>
+					</tr>
+					<tr>
+						<td > → </td>
+						<td> D </td>
+						<td > 右へ移動</td>
+					</tr>
+					<tr>
+						<td > Z </td>
+						<td> W </td>
+						<td > 左へ回転</td>
+					</tr>
+					<tr>
+						<td > X </td>
+						<td> E </td>
+						<td > 右へ回転</td>
+					</tr>
 				</table>
+				
 		</td>
 		
 	</table>
